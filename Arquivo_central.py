@@ -1,4 +1,3 @@
-# Renato
 import os
 import Formatação_cores
 
@@ -52,8 +51,6 @@ def cadastrar_produto():
     salvar_arquivo('produtos.txt', produtos, sobrescrever=True)
     print(f"{Formatação_cores.GREEN}Produto cadastrado com sucesso!{Formatação_cores.RESET}")
 
-
-#Rai
 def remover_produto():
     os.system("cls")
     codigo = input("Código do produto a ser removido: ")
@@ -154,8 +151,6 @@ def vender_produto():
     salvar_arquivo('vendas.txt', vendas, sobrescrever=True)
     print(f"{Formatação_cores.GREEN}Venda registrada com sucesso.{Formatação_cores.RESET}")
 
-
-#Edemilson
 def cancelar_compra():
     os.system("cls")
     codigo = input("Código da compra a ser cancelada: ")
