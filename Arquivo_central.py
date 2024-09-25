@@ -255,9 +255,11 @@ def saldo_financeiro():
         total_arrecadado += qtd_vendida * float(preco_venda)
     
     lucro_total = total_arrecadado - total_investido
-    print(f"{Formatação_cores.YELLOW}Total investido: {Formatação_cores.Moeda.formatar(total_investido)}{Formatação_cores.RESET}")
-    print(f"{Formatação_cores.YELLOW}Total arrecadado: {Formatação_cores.Moeda.formatar(total_arrecadado)}{Formatação_cores.RESET}")
-    print(f"{Formatação_cores.YELLOW}Lucro total: {Formatação_cores.Moeda.formatar(lucro_total)}{Formatação_cores.RESET}")
+    print('╔'+'═' * 36  +'╗')
+    print('║ ' + f"{Formatação_cores.YELLOW}Total investido: {Formatação_cores.Moeda.formatar(total_investido)}{Formatação_cores.RESET}" + " " * 12 + '║')
+    print('║ ' + f"{Formatação_cores.YELLOW}Total arrecadado: {Formatação_cores.Moeda.formatar(total_arrecadado)}{Formatação_cores.RESET}"+ " " * 11 + '║')
+    print('║ ' + f"{Formatação_cores.YELLOW}Lucro total: {Formatação_cores.Moeda.formatar(lucro_total)}{Formatação_cores.RESET}"+ " " * 16 + '║')
+    print('╚'+'═' * 36  +'╝')
 
 def autenticar():
     senha = "8787"
